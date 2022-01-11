@@ -14,7 +14,8 @@ export const useStyles = createUseStyles({
         alignItems: 'center',
         flexDirection: 'column',
         position: 'relative',
-    },
+    }, 
+    
     player: {
         width: '100%',
         height: '100px',
@@ -135,9 +136,10 @@ export const useStyles = createUseStyles({
     },
     loginSignUpContainer: {
         display: 'flex',
-        marginLeft: '350px',
         marginTop: '20px',
+        justifyContent: 'flex-end',
         fontSize: '0.8rem',
+        width: '100%',
     },
     loginTitle: {
         marginRight: '10px',
@@ -218,7 +220,57 @@ export const useStyles = createUseStyles({
         borderRadius: '20px',
         "&:hover" : {
             backgroundColor: 'rgba(30, 30, 30, 0.9)',
-        }
+        },
         
-    }
+    },
+    '@media (max-width: 600px)': {
+        playerContainer: {
+          width: '300px',
+        },
+        player: {
+            justifyContent: 'space-between'
+        },
+        imageWheel: {
+            width: '100px',
+            height: '100px'
+        },
+        notLoggedInContainer: {
+            marginRight: '20px',
+            width: '60%'
+        },
+        contentContainer: {
+            width: '65%'
+        },
+        mainTitle: {
+            fontSize: '0.8rem',
+            marginTop: '8px',
+            "& span": {
+                fontWeight: '400',
+                fontStyle: 'italic'
+            }
+        },
+        artistTitle: {
+            fontSize: '0.7rem',
+            fontWeight: 'bold',
+            "& span": {
+                fontWeight: '400',
+                fontStyle: 'italic'
+            }
+        },
+        nextTitle: {
+            marginBottom: '10px',
+            fontSize: '0.6rem'
+        },
+        displayUserContainer: {
+            "& button" : {
+                fontSize: '12px'
+            },
+            "& p": {
+                maxWidth: '50%'
+            },
+            width: '80%',
+            fontSize: '12px'
+        },
+        
+    },
 })

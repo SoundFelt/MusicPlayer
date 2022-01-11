@@ -42,8 +42,8 @@ function UserTracks(props) {
                             </span>
                     </div>
                     <div className={classes.iconsContainer}>                    
-                        {!trackDeleting ? <div><FontAwesomeIcon className={classes.musicIcon} icon={faMusic} onClick={() => props.clickedTrack(idx)}/>
-                        <FontAwesomeIcon className={classes.deleteIcon} icon={faTrashAlt} onClick={() => deletingTrack(idx, track)}/> </div>
+                        {!trackDeleting ? <><FontAwesomeIcon className={classes.musicIcon} icon={faMusic} onClick={() => props.clickedTrack(idx)}/>
+                        <FontAwesomeIcon className={classes.deleteIcon} icon={faTrashAlt} onClick={() => deletingTrack(idx, track)}/> </>
                         : ""}
                     </div>
                 </div>
