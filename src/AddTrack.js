@@ -43,7 +43,7 @@ export default function AddTrack(props) {
         <Modal show={props.openAddTrackModal} onClose={props.toggleAllModalsClose}>
             <Modal.Card className={classes.modal}>
                 <Modal.Card.Header className={classes.header} onClick={props.preventModalsClose} showClose={false}>
-                    Add Track 
+                    <p>Add Track </p>
                     
                 </Modal.Card.Header>
                 <Modal.Card.Body className={classes.body} onClick={props.preventModalsClose}>

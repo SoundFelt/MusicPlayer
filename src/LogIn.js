@@ -46,7 +46,7 @@ export default function LogIn(props) {
             <Modal show={props.openLogInModal} onClose={props.toggleAllModalsClose}>
                 <Modal.Card className={classes.modal}>
                     <Modal.Card.Header className={classes.header} onClick={props.preventModalsClose} showClose={false}>
-                        Log In
+                        <p>Log In</p>
                         {error && <Notification className={classes.error} color='danger'>{error}<Button remove onClick={() => setError('')}/></Notification>}
                     </Modal.Card.Header>
                     <Modal.Card.Body className={classes.body} onClick={props.preventModalsClose}>
