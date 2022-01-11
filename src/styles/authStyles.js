@@ -16,6 +16,11 @@ export const useStyles = createUseStyles({
         padding: '10px 40px',
         marginTop: '10px'
     },
+    message: {
+        fontSize: '1rem',
+        padding: '10px 40px',
+        marginTop: '10px'
+    },
     body: {
         "& Label": {
             textAlign: 'left',
@@ -65,7 +70,7 @@ export const useStyles = createUseStyles({
             width: '300px',
         },
         header: {
-            height: '50px',
+            height: '90px',
                 "& p": {
                     fontSize: '20px'
                 }
@@ -78,6 +83,9 @@ export const useStyles = createUseStyles({
             "& p": {
                 fontSize: '15px'
             },
+            "& h5": {
+                fontSize: '0.8rem',
+            }
         },
         body: {
             "& Label": {
@@ -95,6 +103,18 @@ export const useStyles = createUseStyles({
                 fontWeight: '400',
                 fontSize: '0.8rem',  
             }
+        },
+        error: {
+            fontSize: '0.7rem',
+            padding: '5px 20px',
+            marginTop: '0',
+            marginBottom: '10px'
+        },
+        message: {
+            fontSize: '0.7rem',
+            padding: '5px 20px',
+            marginTop: '0',
+            marginBottom: '10px'
         },
     },
 })

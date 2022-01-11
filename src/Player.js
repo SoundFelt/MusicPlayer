@@ -66,6 +66,7 @@ function Player() {
         if (userTracks.length === 1) {
             return audioElement.current.currentTime = 0
         }
+        setIsPlaying(true)
     }
     const handlePreviousSong = () => {
         if (currentSongIndex - 1 < 0) {
@@ -81,6 +82,7 @@ function Player() {
         if (userTracks.length === 1) {
             return audioElement.current.currentTime = 0 
         }
+        setIsPlaying(true)
     }
     const clickedTrack = (clickedTrackIdx) => {
         setCurrentSongIndex(clickedTrackIdx)

@@ -39,7 +39,8 @@ export default function SignUp(props) {
         await signUp(signUpUsername, signUpEmail, signUpPassword)
         } catch (error) {
             console.log(error)
-            return setError('Account not created')
+            setError('Account not created')
+            setLoading(false)
         }
         setLoading(false)
         props.toggleAllModalsClose() 
@@ -58,25 +59,25 @@ export default function SignUp(props) {
                     <Field>
                             <Label>Username:</Label>
                             <Control>
-                            <Input type="text" onChange={(e) => setSignUpUsername(e.target.value)} placeholder="Username"></Input>
+                            <Input type="text" onChange={(e) => setSignUpUsername(e.target.value)} placeholder="Username" required></Input>
                             </Control>
                         </Field>
                         <Field>
                             <Label>Email:</Label>
                             <Control>
-                            <Input type="email" onChange={(e) => setSignUpEmail(e.target.value)} placeholder="Email"></Input>
+                            <Input type="email" onChange={(e) => setSignUpEmail(e.target.value)} placeholder="Email" required></Input>
                             </Control>
                         </Field>
                         <Field>
                             <Label>Password:</Label>
                             <Control>
-                            <Input type="password" onChange={(e) => setSignUpPassword(e.target.value)} placeholder="Password"></Input>
+                            <Input type="password" onChange={(e) => setSignUpPassword(e.target.value)} placeholder="Password" required></Input>
                             </Control>
                         </Field>
                         <Field>
                             <Label>Confirm Password:</Label>
                             <Control>
-                            <Input type="password" onChange={(e) => setSignUpConfirmPassword(e.target.value)} placeholder="Confirm Password"></Input>
+                            <Input type="password" onChange={(e) => setSignUpConfirmPassword(e.target.value)} placeholder="Confirm Password" required></Input>
                             </Control>
                         </Field>
                         <Button disabled={loading} fullwidth>Sign Up</Button>

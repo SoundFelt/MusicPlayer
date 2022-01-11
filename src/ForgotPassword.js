@@ -41,7 +41,7 @@ export default function LogIn(props) {
             <Modal show={props.forgotPasswordModal} onClose={() => props.setForgotPasswordModal(false)}>
                 <Modal.Card className={classes.modal}>
                     <Modal.Card.Header className={classes.header} showClose={false}>
-                        Password Reset
+                        <p>Password Reset</p>
                         {error && <Notification className={classes.error} color='danger'>{error}</Notification>}
                         {message && <Notification className={classes.message} color='success'>{message}</Notification>}       
                     </Modal.Card.Header>

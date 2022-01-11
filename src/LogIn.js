@@ -54,13 +54,13 @@ export default function LogIn(props) {
                         <Field>
                             <Label>Email:</Label>
                             <Control>
-                            <Input type="email" onChange={(e) => setLogInEmail(e.target.value)} placeholder="Email"></Input>
+                            <Input type="email" onChange={(e) => setLogInEmail(e.target.value)} placeholder="Email" required></Input>
                             </Control>
                         </Field>
                         <Field>
                             <Label>Password:</Label>
                             <Control>
-                            <Input type="password" onChange={(e) => setLogInPassword(e.target.value)} placeholder="Password"></Input>
+                            <Input type="password" onChange={(e) => setLogInPassword(e.target.value)} placeholder="Password" required></Input>
                             </Control>
                         </Field>
                         <Button className={classes.loginButton} disabled={loading} fullwidth>Log In</Button>
