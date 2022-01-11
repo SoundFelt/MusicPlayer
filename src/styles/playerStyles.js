@@ -41,8 +41,8 @@ export const useStyles = createUseStyles({
         animationPlayState: 'paused',
         "&:after": {
             content: '""',
-            width: '20px',
-            height: '20px',
+            width: '15px',
+            height: '15px',
             backgroundColor: 'white',
             borderRadius: '50%',
             left: '43%',

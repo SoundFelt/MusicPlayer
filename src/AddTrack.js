@@ -51,25 +51,25 @@ export default function AddTrack(props) {
                     <Field>
                         <Label>Track Title:</Label>
                         <Control>
-                        <Input type="text" onChange={(e) => setTrackTitle(e.target.value)} placeholder="Track Title"></Input>
+                        <Input type="text" onChange={(e) => setTrackTitle(e.target.value)} required placeholder="Track Title"></Input>
                         </Control>
                     </Field>
                     <Field>
                         <Label>Track Artist:</Label>
                         <Control>
-                        <Input type="text" onChange={(e) => setTrackArtist(e.target.value)} placeholder="Track Artist"></Input>
+                        <Input type="text" onChange={(e) => setTrackArtist(e.target.value)} required placeholder="Track Artist"></Input>
                         </Control>
                     </Field>
                     <Field>
                         <Label>Track Image: (JPEG or PNG)</Label>
                         <Control>
-                        <Input type="file" onChange={handleImageChange} placeholder="Email" accept=".jpeg,.png"></Input>
+                        <Input type="file" onChange={handleImageChange} required accept=".jpeg,.png"></Input>
                         </Control>
                     </Field>
                     <Field>
                         <Label>Track Audio: (MP3 or WAV)</Label>
                         <Control>
-                        <Input type="file" onChange={handleAudioChange} placeholder="Password" accept=".mp3,.wav"></Input>
+                        <Input type="file" onChange={handleAudioChange} required accept=".mp3,.wav"></Input>
                         </Control>
                     </Field>
                     <Button disabled={loading} className={classes.loginButton}  fullwidth>Add Track</Button>
